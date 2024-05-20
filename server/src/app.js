@@ -7,7 +7,7 @@ const app = new express();
 
 app.use(
     cors({
-        origin: process.env.CORS_ORIGIN,
+        origin:"https://vtube-gamma.vercel.app/",
         credentials: true,
     })
 );
