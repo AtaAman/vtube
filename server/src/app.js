@@ -4,8 +4,7 @@ import cookieParser from "cookie-parser";
 import morgan from "morgan";
 
 const app = express();
-
-const allowedOrigins = ['http://localhost:5173', 'https://vtubes.vercel.app/'];
+const allowedOrigins = ['http://localhost:5173', 'https://vtube-gamma.vercel.app','https://vtubes.vercel.app/'];
 
 const corsOptions = {
     origin: function (origin, callback) {
