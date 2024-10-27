@@ -70,11 +70,11 @@ const registerUser = asyncHandler( async(req, res) => {
         fullName,
         avatar: {
             public_id: avatar.public_id,
-            url: avatar._url
+            url: avatar.url
         },
         coverImage: {
             public_id: coverImage?.public_id || "",
-            url: coverImage?._url || ""
+            url: coverImage?.url || ""
         },
         username: username.toLowerCase(),
         email,
