@@ -29,6 +29,9 @@ app.use(express.static("public"));
 app.use(cookieParser());
 app.use(morgan("dev")); // HTTP request logger middleware for node.js 
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 // Routes import
 import userRouter from "./routes/user.routes.js";
 import commentRouter from "./routes/comment.routes.js";
