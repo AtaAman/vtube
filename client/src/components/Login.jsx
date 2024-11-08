@@ -37,6 +37,10 @@ function Login() {
     return (
         <>
             <div className="w-full h-screen text-white p-3 flex justify-center items-start">
+                <div>
+                    <p className="text-center text-lg">Username: john</p>
+                    <p className="text-center text-lg">password: 12345678</p>
+                </div>
                 <div className="flex max-w-5xl flex-col space-y-5 justify-center items-center border border-slate-600 p-3 mt-20">
                     <div className="flex items-center gap-2 mt-5">
                         <Logo />
@@ -49,7 +53,7 @@ function Login() {
                         <Input
                             label="Username / email : "
                             type="text"
-                            placeholder="example@gmail.com"
+                            placeholder="john"
                             {...register("username", {
                                 required: "username is required",
                             })}
@@ -62,7 +66,7 @@ function Login() {
                         <Input
                             label="Password: "
                             type="password"
-                            placeholder="1kd074fjw0"
+                            placeholder="12345678"
                             {...register("password", {
                                 required: "password is required",
                             })}
