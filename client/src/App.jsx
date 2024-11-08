@@ -162,9 +162,9 @@ function App() {
                 <Route
                     path="/watch/:videoId"
                     element={
-                        
+                        <AuthLayout authentication>
                             <VideoDetail />
-                       
+                        </AuthLayout>
                     }
                 />
                 <Route
